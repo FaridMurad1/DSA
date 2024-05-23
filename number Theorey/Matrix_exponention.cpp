@@ -15,7 +15,7 @@ ll mul(ll arr[][N],ll B[][N],ll n)
                 res[i][j]=0;
                 for(ll k=1;k<=n;k++)
                 {
-                    ll x=(arr[i][k]*B[k][j])%md;
+                    ll x=(arr[i][k]*B[k][j])%md;// matrix multiplication
                     res[i][j]=(res[i][j]+x)%md;
                 }
             }
@@ -24,7 +24,7 @@ ll mul(ll arr[][N],ll B[][N],ll n)
         {
             for(ll j=1;j<=n;j++)
             {
-                arr[i][j]=res[i][j];
+                arr[i][j]=res[i][j];    
             }
         }
 }
@@ -57,7 +57,7 @@ ll power(ll ar[][N], ll n, ll p)
     {
         for (ll j = 1; j <= n; j++)
         {
-            ar[i][j] = I[i][j];
+            ar[i][j] = I[i][j];     // jahatu ans I/ res matris a asa ,oita ka arr matrix a pass kora dibo
         }
     }
 }
